@@ -22,3 +22,16 @@ function getComment($connection) {
     echo "</p></div>";
   }
 }
+
+function editComment($connection) {
+  if (isset($_POST['commentSubmit'])) {
+    $cid = $_POST['cid'];
+    $uid = $_POST['uid'];
+    $date = $_POST['date'];
+    $message = $_POST['message'];
+
+    $sql = "UPDATE comments SET message='$message' WHERE cid='$cid'";
+    $result = mysqli_query($connection, $sql);
+    header("Location: index.php");
+  }
+}

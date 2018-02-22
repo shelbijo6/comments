@@ -25,8 +25,9 @@ button {
   width: 815px;
   padding: 20px;
   margin-bottom: 4px;
-  background-color: white;
+  background-color: #fff;
   border-radius: 4px;
+  position: relative;
 }
 
 .comment-box p {
@@ -35,4 +36,22 @@ button {
   line-height: 16px;
   color: #282828;
   font-weight: 100;
+}
+
+.edit-form {
+  position: relative;
+  top: 0px;
+  right: 0px;
+}
+
+.edit-form button {
+  width: 20px;
+  height: 10px;
+  color: #282828;
+  background-color: #fff;
+  opacity: 0.7;
+}
+
+.edit-form button:hover {
+  opacity: 1;
 }
